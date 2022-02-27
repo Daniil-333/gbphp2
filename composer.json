@@ -1,0 +1,17 @@
+{
+    "name": "daniel/gbphp",
+    "autoload": {
+        "psr-4": {
+            "Daniel\\Gbphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel",
+            "email": "monobootica@yandex.ru"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.19"
+    }
+}
