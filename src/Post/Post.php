@@ -1,14 +1,12 @@
 <?php
 
-namespace Daniel\Gbphp\Post;
-
-use Daniel\Gbphp\Person;
+namespace APP\Post;
 
 class Post
 {
     public function __construct(
         private int $id,
-        private Person $person,
+        private int $person,
         private string $heading,
         private string $text
     ){}

@@ -2,7 +2,7 @@
     "name": "daniel/gbphp",
     "autoload": {
         "psr-4": {
-            "Daniel\\Gbphp\\": "src/"
+            "APP\\": "src/"
         }
     },
     "authors": [

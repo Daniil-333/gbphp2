@@ -1,17 +1,21 @@
 <?php
 
-use \Daniel\Gbphp\Person as Person;
-use \Daniel\Gbphp\Post as Post;
-use \Daniel\Gbphp\Comment as Comment;
+use APP\Person\Person;
+use APP\Post\Post;
+use APP\Comment\Comment;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$faker = Faker\Factory::create();
 
 switch ($argv[1]) {
     case 'user':
-        new Person();
+        echo new Person($faker->randomDigitNotZero(10),$faker->firstName, $faker->lastName);
         break;
     case 'post':
-        new Post();
+        echo new Post($faker->randomDigitNotZero(10), $faker->randomDigitNotZero(10), $faker->firstName, $faker->lastName);
         break;
     case 'comment':
-        new Comment();
+        echo new Comment($faker->randomDigitNotZero(10), $faker->randomDigitNotZero(10), $faker->randomDigitNotZero(10), $faker->text);
         break;
 }

@@ -1,9 +1,6 @@
 <?php
 
-namespace Daniel\Gbphp\Comment;
-
-use Daniel\Gbphp\Person as User;
-use Daniel\Gbphp\Post as Post;
+namespace APP\Comment;
 
 class Comment
 {
@@ -16,6 +13,6 @@ class Comment
 
     public function __toString()
     {
-        return $this->heading . '<br>' . $this->text;
+        return $this->text;
     }
 }

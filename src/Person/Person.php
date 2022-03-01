@@ -1,5 +1,5 @@
 <?php
-namespace Daniel\Gbphp\Person;
+namespace APP\Person;
 
 class Person
 {
@@ -11,6 +11,6 @@ class Person
 
     public function __toString()
     {
-        return $this->firstName . ' ' . $this->lastName;
+        return $this->id. $this->firstName . ' ' . $this->lastName;
     }
 }
