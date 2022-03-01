@@ -6,12 +6,14 @@ use APP\Person\Person;
 use APP\Post\Post;
 use APP\Comment\Comment;
 use Faker;
+use Faker\Factory;
+use Faker\Generator;
 
 class EntityFactory
 {
     protected ?\Generator $faker = null;
-    public function __construct(Factory $faker = null) {
-        $this->faker = $faker ?? Faker\Factory::create();
+    public function __construct(Generator $faker = null) {
+        $this->faker = $faker ?? Factory::create();
     }
 
     public function create(string $type) {
